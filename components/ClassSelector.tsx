@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useRouter } from 'next/navigation';
-import { useFormStore } from '@/app/store/KgStore';
+import { useFormStore } from '@/store/KgStore';
 
 export default function ClassSelector() {
   const router = useRouter();

@@ -5,7 +5,7 @@ import PdfForm from './PdfForm';
 import PdfFormOld from './PdfFormOld';
 import PdfViewer from './PdfViewer';
 import { generatePdf, createPdfBlobUrl, downloadPdf } from './pdfUtils';
-import { useFormStore } from '@/app/store/KgStore';
+import { useFormStore } from '@/store/KgStore';
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 

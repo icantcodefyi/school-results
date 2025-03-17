@@ -21,7 +21,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
-import { useFormStore } from "@/app/store/KgStore";
+import { useFormStore } from "@/store/KgStore";
 import { Template } from "@/template/template";
 
 interface PdfFormProps {
