@@ -1,9 +1,9 @@
-import PdfGenerator from './components/PdfGenerator';
+import ClassSelector from '@/components/ClassSelector';
 
 export default function Home() {
   return (
     <div className="container mx-auto py-8">
-      <PdfGenerator />
+      <ClassSelector />
     </div>
   );
 }
