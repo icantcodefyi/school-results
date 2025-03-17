@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     images: ["/og.jpeg"],
   },
   icons: {
-    icon: "/favicon.jpeg",
-    shortcut: "/favicon.jpeg",
-    apple: "/favicon.jpeg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   metadataBase: new URL("https://lkps.ani.ink"),
 };
