@@ -9,7 +9,7 @@ export const Template: TemplateType = {
                 "content": "Name",
                 "position": {
                     "x": 53.72,
-                    "y": 78.3
+                    "y": 78.5
                 },
                 "width": 69.59,
                 "height": 5.82,
@@ -34,7 +34,7 @@ export const Template: TemplateType = {
                 "content": "Father's Name",
                 "position": {
                     "x": 53.72,
-                    "y": 85.76
+                    "y": 86
                 },
                 "width": 69.59,
                 "height": 5.82,
@@ -59,7 +59,7 @@ export const Template: TemplateType = {
                 "content": "Mother's Name",
                 "position": {
                     "x": 53.72,
-                    "y": 93.38
+                    "y": 93.58
                 },
                 "width": 69.59,
                 "height": 5.82,
@@ -84,7 +84,7 @@ export const Template: TemplateType = {
                 "content": "Height/Weight",
                 "position": {
                     "x": 53.72,
-                    "y": 100.73
+                    "y": 101.2
                 },
                 "width": 69.59,
                 "height": 5.82,
@@ -109,7 +109,7 @@ export const Template: TemplateType = {
                 "content": "class",
                 "position": {
                     "x": 154.69,
-                    "y": 78.25
+                    "y": 78.5
                 },
                 "width": 58.47,
                 "height": 5.82,
@@ -134,7 +134,7 @@ export const Template: TemplateType = {
                 "content": "dob",
                 "position": {
                     "x": 154.69,
-                    "y": 85.87
+                    "y": 86
                 },
                 "width": 58.47,
                 "height": 5.82,
@@ -159,7 +159,7 @@ export const Template: TemplateType = {
                 "content": "attendance",
                 "position": {
                     "x": 154.69,
-                    "y": 93.48
+                    "y": 93.58
                 },
                 "width": 58.47,
                 "height": 5.82,
@@ -184,7 +184,7 @@ export const Template: TemplateType = {
                 "content": "scholar",
                 "position": {
                     "x": 154.69,
-                    "y": 100.84
+                    "y": 101.2
                 },
                 "width": 58.47,
                 "height": 5.82,
