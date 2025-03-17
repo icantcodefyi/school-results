@@ -25,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <script
           crossOrigin="anonymous"
           src="//unpkg.com/react-scan/dist/auto.global.js"
         />
-      </head>
+      </head> */}
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
