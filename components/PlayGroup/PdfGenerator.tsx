@@ -2,18 +2,14 @@
 
 import { useState } from 'react';
 import PdfForm from './PdfForm';
-import PdfFormOld from './PdfFormOld';
 import PdfViewer from './PdfViewer';
 import { generatePdf, createPdfBlobUrl, downloadPdf } from './pdfUtils';
-import { useFormStore } from '@/store/KgStore';
-import { Switch } from "@/components/ui/switch";
-import { Label } from "@/components/ui/label";
+import { useFormStore } from '@/store/PlayGroupStore';
 
 export default function PdfGenerator() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
   const [viewerOpen, setViewerOpen] = useState(false);
-  const [useSimpleForm, setUseSimpleForm] = useState(false);
   const { formFields } = useFormStore();
   
   const handleGeneratePdf = async (formData: Record<string, string>) => {
@@ -41,42 +37,28 @@ export default function PdfGenerator() {
     if (pdfUrl) {
       // Use student name for the filename if available
       const filename = formFields.name 
-        ? `${formFields.name.trim().replace(/\s+/g, '-').toLowerCase()}-result.pdf`
-        : 'school-result.pdf';
+        ? `${formFields.name.trim().replace(/\s+/g, '-').toLowerCase()}-playgroup-result.pdf`
+        : 'playgroup-result.pdf';
         
       downloadPdf(pdfUrl, filename);
     }
   };
   
+  const handleCloseViewer = () => {
+    setViewerOpen(false);
+  };
+
   return (
-    <div className="container mx-auto py-10">
-      <div className="flex items-center justify-end max-w-6xl mx-auto space-x-2 mb-4">
-        <Label htmlFor="form-toggle" className="cursor-pointer">
-          {useSimpleForm ? "Using Advanced Form" : "Using Simple Form"}
-        </Label>
-        <Switch
-          id="form-toggle"
-          checked={useSimpleForm}
-          onCheckedChange={setUseSimpleForm}
-        />
-      </div>
-
-      {useSimpleForm ? (
-        <PdfFormOld 
-          onGenerate={handleGeneratePdf}
-          isGenerating={isGenerating}
-        />
-      ) : (
-        <PdfForm 
-          onGenerate={handleGeneratePdf}
-          isGenerating={isGenerating}
-        />
-      )}
-
-      <PdfViewer
+    <div className="container mx-auto py-4">
+      <PdfForm 
+        onGenerate={handleGeneratePdf}
+        isGenerating={isGenerating}
+      />
+      
+      <PdfViewer 
         pdfUrl={pdfUrl}
         isOpen={viewerOpen}
-        onOpenChange={setViewerOpen}
+        onClose={handleCloseViewer}
         onDownload={handleDownloadPdf}
       />
     </div>

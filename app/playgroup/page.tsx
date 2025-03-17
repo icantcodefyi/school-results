@@ -1,7 +1,7 @@
 'use client';
 
+import PdfGenerator from "@/components/PlayGroup/PdfGenerator";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { FileChartColumnIncreasing } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
@@ -23,15 +23,7 @@ export default function PlayGroupPage() {
         </Button>
       </Link>
       
-      <Card className="w-full max-w-3xl mx-auto">
-        <CardHeader>
-          <CardTitle className="text-center">Play Group Result Generator</CardTitle>
-        </CardHeader>
-        <CardContent className="text-center py-12">
-          <p className="text-lg mb-4">This feature is coming soon.</p>
-          <p>The Play Group result generator is currently being developed and will be available in a future update.</p>
-        </CardContent>
-      </Card>
+      <PdfGenerator />
     </div>
   );
 } 
