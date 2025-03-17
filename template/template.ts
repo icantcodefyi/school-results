@@ -1552,7 +1552,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 132.49,
+                    "x": 132.4,
                     "y": 192.07
                 },
                 "width": 20.11,
@@ -1576,7 +1576,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 132.45,
+                    "x": 132.4,
                     "y": 197.58
                 },
                 "width": 20.11,
@@ -1624,7 +1624,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 132.61,
+                    "x": 132.4,
                     "y": 208.85
                 },
                 "width": 20.11,
@@ -1672,7 +1672,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 153.03,
+                    "x": 153.07,
                     "y": 197.52
                 },
                 "width": 20.11,
@@ -1696,7 +1696,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 152.98,
+                    "x": 153.07,
                     "y": 203.28
                 },
                 "width": 20.11,
@@ -1720,7 +1720,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 153.19,
+                    "x": 153.07,
                     "y": 208.79
                 },
                 "width": 20.11,
@@ -1768,7 +1768,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 173.88,
+                    "x": 173.92,
                     "y": 197.47
                 },
                 "width": 22.98,
@@ -1792,7 +1792,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 173.83,
+                    "x": 173.92,
                     "y": 203.23
                 },
                 "width": 22.98,
@@ -1816,7 +1816,7 @@ export const Template: TemplateType = {
                 "type": "text",
                 "content": "A",
                 "position": {
-                    "x": 173.74,
+                    "x": 173.92,
                     "y": 208.74
                 },
                 "width": 23.28,
