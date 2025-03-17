@@ -30,7 +30,7 @@ export default function PdfForm({ onGenerate, isGenerating }: PdfFormProps) {
   const { formFields, setFormField } = useFormStore();
 
   // Define the grade options for select dropdowns
-  const gradeOptions = ["A+", "A", "B+", "B", "C+", "C", "D"];
+  const gradeOptions = ["A++", "A+", "A", "B+", "B", "C"];
   
   // Define the subject fields for the PlayGroup class
   const subjectFields = [

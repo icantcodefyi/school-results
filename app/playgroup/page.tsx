@@ -7,7 +7,6 @@ import { FileChartColumnIncreasing } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
 
 export default function PlayGroupPage() {
-  
   return (
     <div className="container mx-auto py-8">
       <Link href="/">

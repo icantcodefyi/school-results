@@ -27,7 +27,7 @@ export default function PdfViewer({ pdfUrl, isOpen, onClose, onDownload }: PdfVi
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl w-full h-[85vh]">
+      <DialogContent className="max-w-4xl w-full h-[90vh]">
         <DialogHeader>
           <DialogTitle>PlayGroup Result Preview</DialogTitle>
           <DialogDescription>
