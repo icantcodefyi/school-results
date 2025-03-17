@@ -1,21 +1,27 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
+import { FileChartColumnIncreasing } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function PlayGroupPage() {
-  const router = useRouter();
   
   return (
     <div className="container mx-auto py-8">
-      <Button 
-        variant="outline" 
-        className="fixed"
-        onClick={() => router.push('/')}
-      >
-        ← Back to Class Selection
-      </Button>
+      <Link href="/">
+        <Button variant="ghost" size="sm" className="fixed top-4 left-4">
+          <ChevronLeft className="h-4 w-4" />
+          Back to Home
+        </Button>
+      </Link>
+      <Link href="/playgroup/bulk">
+        <Button variant="ghost" size="sm" className="fixed top-4 right-4">
+          <FileChartColumnIncreasing className="h-4 w-4" />
+          Bulk Generate Results
+        </Button>
+      </Link>
       
       <Card className="w-full max-w-3xl mx-auto">
         <CardHeader>

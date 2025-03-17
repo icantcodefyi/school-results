@@ -9,7 +9,7 @@ export default function GeneratePage() {
 
   return (
     <div className="container mx-auto py-8">
-      <Link href="/kindergarden">
+      <Link href="/">
         <Button variant="ghost" size="sm" className="fixed top-4 left-4">
           <ChevronLeft className="h-4 w-4" />
           Back to Home
