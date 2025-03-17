@@ -9,7 +9,7 @@ import Papa from 'papaparse';
 import { generateBulkPdf, createPdfBlobUrl, downloadPdf } from './pdfUtils';
 
 interface BulkDataUploadProps {
-  onProcessing: (isProcessing: boolean) => void;
+  onProcessing?: (isProcessing: boolean) => void;
 }
 
 interface StudentData {
@@ -17,7 +17,7 @@ interface StudentData {
   [key: string]: string;
 }
 
-export default function BulkDataUpload({ onProcessing }: BulkDataUploadProps) {
+export default function BulkDataUpload({ onProcessing = () => {} }: BulkDataUploadProps) {
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState<string | null>(null);

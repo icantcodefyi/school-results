@@ -4,8 +4,6 @@ import { useState } from 'react';
 import PdfForm from './PdfForm';
 import PdfFormOld from './PdfFormOld';
 import PdfViewer from './PdfViewer';
-import Link from 'next/link';
-import { Button } from "@/components/ui/button";
 import { generatePdf, createPdfBlobUrl, downloadPdf } from './pdfUtils';
 import { useFormStore } from '@/store/KgStore';
 import { Switch } from "@/components/ui/switch";

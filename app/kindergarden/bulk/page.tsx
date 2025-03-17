@@ -1,14 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import BulkDataUpload from "@/components/KgClass/BulkDataUpload";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
 
 export default function BulkDataUploadPage() {
-  const [isProcessing, setIsProcessing] = useState(false);
-
   return (
     <div className="container mx-auto">
       <Link href="/kindergarden">
@@ -19,7 +16,7 @@ export default function BulkDataUploadPage() {
       </Link>
 
       <div className="max-w-3xl mx-auto h-screen flex items-center justify-center">
-        <BulkDataUpload onProcessing={setIsProcessing} />
+        <BulkDataUpload />
       </div>
     </div>
   );
